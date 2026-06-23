@@ -1,0 +1,44 @@
+{
+  "name": "ecomexperts-assignment",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c magenta,green \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:web": "vite",
+    "dev:api": "node server/index.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\""
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.101.0",
+    "axios": "^1.18.1",
+    "express": "^5.2.1",
+    "framer-motion": "^12.40.0",
+    "lucide-react": "^0.469.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.18.0",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^10.0.3",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "tailwindcss": "^4.0.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^6.0.5"
+  }
+}
