@@ -9,11 +9,7 @@ The catalog is served by a tiny **Express** backend (a local JSON file over
 HTTP — no database), fetched with **React Query + Axios**, held in a single
 **Zustand** store, and the shopper's selections persist to **localStorage**.
 
-![Desktop design reference](design-reference/desktop.png)
-
-> The image above is the **design reference** this app implements. Tablet and
-> mobile references are in [`/design-reference`](design-reference); the app
-> matches all three and stays coherent down to ~375px.
+<img width="1895" height="936" alt="Screenshot 2026-06-23 180706" src="https://github.com/user-attachments/assets/5e3ade03-8997-4221-a711-d01d7efe7d9a" />
 
 ---
 
@@ -22,8 +18,8 @@ HTTP — no database), fetched with **React Query + Axios**, held in a single
 **Prerequisite:** Node.js **18+** (developed and verified on Node 24) and npm.
 
 ```bash
-git clone <repository-url>
-cd ecomexperts-assignment
+git clone https://github.com/mohamed-khaledes/Bundle-Builder
+cd Bundle-Builder
 npm install        # one install covers the frontend AND the backend
 npm run dev        # starts the API and the web app together
 ```
